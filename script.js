@@ -5,6 +5,7 @@ new Chart(ctx, {
   type: 'bar',
   data: {
     labels: ['mon', 'tues', 'wed', 'thurs', 'fri', 'sat', 'sun'],
+
     datasets: [{
     label: '$',
       data: [17.45, 34.91,  52.36, 31.07,23.39,  43.28,  25.48],
@@ -18,10 +19,16 @@ new Chart(ctx, {
         'hsl(10, 79%, 65%)',
         'hsl(10, 79%, 65%)'
       ],
-      borderRadius: 10,
+      borderRadius: 5,
     }]
   },
   options: {
+
+    plugins: {
+        legend: {
+            display: false
+        },
+    },
     scales: {
       y: {
         display: false,

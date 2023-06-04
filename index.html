@@ -1,57 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-  <link rel="stylesheet" href="styles.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="pure-g">
-    <div class="contsent">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses chart component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="content">
+      <div>
       <div class="balance-card">
-        My balance
-        $921.48
-        <img src="./images/logo.svg" height="50px" width=="50px" alt="logo" />
+        <div class="my-balance">
+          <p class="balance-title">My balance</p>
+          <p class="balance-total"> $921.48</p>
+        </div>
+        <div class="balance-logo">
+          <img src="./images/logo.svg" alt="logo" width="50px" height="50px" />
+        </div>
       </div>
-    <div class="card">
-      <h1>  Spending - Last 7 days
-      </h1>
-      <div class="chart">
-        <canvas id="myChart"></canvas>
+      <div class="spending-card">
+        <h1>Spending - Last 7 days</h1>
+        <div class="chart">
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="bottom">
+          <div class="total">
+            <p class="total-title">Total this month</p>
+            <p class="total-number">$478.33</p>
+          </div>
+          <div class="percentage">
+            <p class="percent">+2.4%</p>
+            <p class="percent-text">from last month</p>
+          </div>
+        </div>
       </div>
-    <div class="total">
-      Total this month
-      $478.33
-    
-      +2.4%
-      from last month
+      </div>
     </div>
-  </div>
-
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
     </div>
-</div>
-
-
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-  <script src="script.js"></script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
